@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://madpix.com.br/wp-content/uploads/2021/04/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall-scaled.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 45px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.menu-option {
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease; /* Transições suaves */
+    padding: 10px; /* Adiciona algum espaçamento interno */
+    border-radius: 5px; /* Opcional: arredonda os cantos */
+    color: #ffffff; /* Cor do texto */
+    margin: 0 15px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.menu-option:hover {
+    color: white; /* Muda a cor do texto ao passar o mouse */
+    background-color: #528f7b; /* Muda a cor de fundo ao passar o mouse */
+}
+
+.menu-option:active {
+    transform: scale(1.1); /* Aumenta o tamanho ao clicar */
+}
+
+nav {
+    display: none; /* Inicialmente oculto */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-container {
+    display: flex;               /* Usar flexbox para alinhar os itens lado a lado */
+    justify-content: center;     /* Centraliza os itens horizontalmente */
+    align-items: center;         /* Alinha os itens verticalmente */
+    height: 100vh;              /* Altura total da seção */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    width: 100%;   /* Largura 100% do contêiner da grade */
+    height: 300px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Cobre o espaço, mantendo a proporção */
+    border-radius: 8px; /* Cantos arredondados, opcional */
+    
+}
+
+.Voltar {
+    font-size: 25px; /* Ajuste o tamanho conforme necessário */
+    color: #ffffff; /* Ajuste a cor conforme necessário */
+    text-align: center; /* Centraliza o texto, se desejado */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+}
+
+.galeria {
+    font-size: 25px; /* Ajuste o tamanho conforme necessário */
+    color: #ffffff; /* Ajuste a cor conforme necessário */
+    text-align: center; /* Centraliza o texto, se desejado */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+body {
+    text-align: center; /* Centraliza o texto do body */
+}
+
+.nossa-historia {
+    display: flex; /* Usar flexbox para alinhar lado a lado */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha a imagem e o texto ao centro verticalmente */
+    margin: 40px 0; /* Espaçamento acima e abaixo */
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgba(75, 128, 114, 0.8); /* Cor de fundo com leve transparência */
+    border-radius: 8px; /* Arredonda os cantos do fundo (opcional) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para um efeito de profundidade (opcional) */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.historia-imagem {
+    width: 280px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaçamento à direita da imagem */
+    border-radius: 50%; /* Para uma imagem circular */
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+    object-fit: cover; /* Para manter a proporção da imagem */
+    object-fit: cover; /* Cobre o espaço, mantendo a proporção */
+}
+
+.historia-texto {
+    font-family: 'Dancing Script', cursive;
+    text-align: center; /* Centraliza o texto do body */
+    text-align: center; /* Alinha o texto ao centro */
+    color: white; /* Altera a cor do texto para melhor contraste */
+    font-size: 23px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 8px; /* Arredonda os cantos do fundo (opcional) */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 5px; /* Ajusta o espaço entre os parágrafos */
+    padding: 15px; /* Reduzido para um pouco menos de espaço interno */
+   
+}
+
+.link-contact {
+    text-align: center;  /* Alinha o texto ao centro */
+    font-size: 28px;
+    color: #ffffff;
+    margin-left: 10px; /* Espaçamento à esquerda */
+    margin-right: 10px; /* Espaçamento à direita */
+}
+
+.footer p {
+    font-family: 'Nome Da Fonte', sans-serif; /* Substitua pelo nome da fonte */
+    font-size: 15px; /* Ajuste o tamanho conforme necessário */
+    text-align: center; /* Centraliza o texto, se desejado */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+}
+
+.galeria {
+    font-size: 28px; /* Ajuste para o tamanho desejado */
+    text-align: center; /* Se desejar centralizar */
+    margin: 20px 0; /* Espaçamento */
+}
+
+.foote p {
+    font-size: 18px; /* Ajuste o tamanho conforme necessário */
+    text-align: center; /* Centraliza o texto, se desejado */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+}
+
+.social-icons {
+    width: 30; /* ou defina uma largura mais ampla */
+    display: flex; /* Usar flexbox para alinhar as logos lado a lado */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-top: 5px; /* Espaçamento acima */
+    max-width: 10px; /* Largura máxima */
+    max-height: 10px; /* Altura máxima */
+}
+
+.whatsapp-logo, .instagram-logo {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 10px; /* Espaçamento à esquerda */
+}
+
+.wixui-rich-text__text {
+    font-size: 20px; /* Ajuste o tamanho conforme necessário */
+    text-align: center; /* Centraliza o texto, se desejado */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+    color: white; /* Altera a cor do texto para melhor contraste */
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-image: url('https://urbanmatter.com/wp-content/uploads/2020/05/shutterstock_646327681-scaled.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o header */
+    background-position: center; /* Centraliza a imagem */
+    color: white; /* Altera a cor do texto para melhor contraste */
+    padding: 10px; /* Espaçamento interno */
+    position: relative; /* Necessário para o posicionamento de elementos filhos */
+    object-fit: cover; /* Cobre o espaço, mantendo a proporção */
+}
+
+header h1 {
+    position: relative; /* Para garantir que o texto fique acima da imagem de fundo */
+    z-index: 1; /* Eleva o título acima da imagem de fundo */
+}
+
+nav {
+    position: relative; 
+}
+.logo{
+    margin: 20px 0; /* Espaçamento */
+    height: auto; /* Mantém a proporção da imagem */
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    margin-left: 10px; /* Espaçamento à esquerda */
+    margin-right: 10px; /* Espaçamento à direita */
+}
+
+.footer-title{
+    font-size: 40px; /* Ajuste o tamanho conforme necessário */
+    text-align: center; /* Centraliza o texto, se desejado */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+    color: white; /* Altera a cor do texto para melhor contraste */
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+      
+
+}
+.estudio{
+    font-family: 'Dancing Script', cursive;
+    text-align: center; /* Centraliza o texto do body */
+    text-align: center; /* Alinha o texto ao centro */
+    color: white; /* Altera a cor do texto para melhor contraste */
+    font-size: 23px; /* Ajuste o tamanho conforme necessário */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo  */
+    border-radius: 8px; /* Arredonda os cantos do fundo (opcional) */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 5px; /* Ajusta o espaço entre os parágrafos */
+    padding: 15px; /* Reduzido para um pouco menos de espaço interno */
+}
+.estudio-img{
+    width: 90%; /* Ajuste a largura da imagem para preencher o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas, se desejado */
+    width: 500px; /* Ajuste o tamanho conforme necessário */
+
+}
+.footer-titles{
+    font-size: 30px; /* Ajuste o tamanho conforme necessário */
+    text-align: center; /* Centraliza o texto, se desejado */
+    margin: 10px 0; /* Espaçamento acima e abaixo */
+    color: rgb(255, 255, 255); /* Altera a cor do texto para melhor contraste */
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
